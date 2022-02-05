@@ -1,0 +1,43 @@
+type: custom:button-card
+name: Gas Valve
+entity: switch.gas_valve
+icon: mdi:valve-open
+color_type: action
+tap_action:
+  action: toggle
+extra_styles: |
+  @keyframes move_valve {
+    0% {transform: rotatez(0deg)}
+    100% {transform: rotatez(90deg)}
+    }
+styles:
+  card:
+    - font-size: 14px
+    - width: min(20vw, 150px)
+    - height: min(20vw, 150px)
+    - margin: 8px
+    - border-radius: 15px
+    - background-color: var(--primary-background-color)
+state:
+  - value: 'on'
+    styles:
+      card:
+        - border-style: solid
+        - font-size: 14px
+        - border-width: 5px
+        - border-color: aqua
+      icon:
+        - animation: move_valve 10s ease
+        - color: gold
+  - value: 'off'
+    styles:
+      card:
+        - border-style: solid
+        - font-size: 14px
+        - border-width: 5px
+        - border-color: aqua
+      icon:
+        - animation: move_valve 10s ease reverse
+        - color: darkgrey
+show_icon: true
+show_name: true
