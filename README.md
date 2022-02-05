@@ -4,3 +4,5 @@ When the valve is open, its icon mdi:valve-open should indicate opened position,
 Would you be so kind as to indicate what is wrong with my code, please? It still doesn't work as expected. I'm stuck..
 
 ![image](https://user-images.githubusercontent.com/87784133/152643842-2052068b-01fc-4b98-b550-493c605277c7.png)
+![image](https://user-images.githubusercontent.com/87784133/152643938-2d2af0d7-fc83-48e9-b1f9-441edc06ac16.png)
+
